@@ -2,10 +2,27 @@ package com.example.customcardalert
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
+import com.example.customcardalert.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        binding.buttonCardSuccess.setOnClickListener {
+            DialogHelper.cardAlertSuccess(this) {
+                Toast.makeText(this, "hola!", Toast.LENGTH_SHORT).show()
+            }
+        }
+
+        binding.buttonCardFailed.setOnClickListener {
+            DialogHelper.cardAlertFailed(this) {
+                Toast.makeText(this, "adios!", Toast.LENGTH_SHORT).show()
+            }
+        }
     }
+
 }
