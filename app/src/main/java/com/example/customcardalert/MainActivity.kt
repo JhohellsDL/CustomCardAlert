@@ -14,15 +14,14 @@ class MainActivity : AppCompatActivity() {
 
         binding.buttonCardSuccess.setOnClickListener {
             DialogHelper.cardAlertSuccess(this) {
-                Toast.makeText(this, "hola!", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Dismiss card Success!", Toast.LENGTH_SHORT).show()
             }
         }
 
         binding.buttonCardFailed.setOnClickListener {
             DialogHelper.cardAlertFailed(this) {
-                Toast.makeText(this, "adios!", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Dismiss card Failed!", Toast.LENGTH_SHORT).show()
             }
         }
     }
-
 }

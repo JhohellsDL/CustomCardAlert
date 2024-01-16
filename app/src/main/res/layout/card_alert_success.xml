@@ -27,10 +27,7 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/gradient_success"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+                android:background="@drawable/gradient_success">
 
                 <ImageView
                     android:id="@+id/button_closed"
@@ -49,13 +46,13 @@
                     android:indeterminateOnly="false"
                     android:progress="70"
                     android:progressDrawable="@drawable/custom_progress_bar_success"
-                    app:layout_constraintBottom_toBottomOf="@id/image_fingerprint"
+                    app:layout_constraintBottom_toBottomOf="@id/image_check"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@id/image_fingerprint" />
+                    app:layout_constraintTop_toTopOf="@id/image_check" />
 
                 <ImageView
-                    android:id="@+id/image_fingerprint"
+                    android:id="@+id/image_check"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
                     android:layout_marginBottom="32dp"
@@ -156,15 +153,15 @@
                             </com.google.android.material.card.MaterialCardView>
 
                         </androidx.constraintlayout.widget.ConstraintLayout>
-                    </androidx.cardview.widget.CardView>
 
+                    </androidx.cardview.widget.CardView>
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </androidx.cardview.widget.CardView>
-    </androidx.constraintlayout.widget.ConstraintLayout>
 
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -41,7 +41,7 @@ class DialogHelper {
             animatedProgressBar(binding.progressBar, 67)
             animatedText(binding.textPercentage, 67)
 
-            binding.buttonCardContinue.setOnClickListener {
+            binding.buttonCardTryAgain.setOnClickListener {
                 action()
                 delayHideCard(binding, myCard, 2000)
             }
